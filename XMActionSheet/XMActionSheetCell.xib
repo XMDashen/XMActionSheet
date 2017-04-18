@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="123" id="KGk-i7-Jjw" customClass="XMActionSheetCell">
+            <rect key="frame" x="0.0" y="0.0" width="628" height="123"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="628" height="123"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="R07-ZP-ygP">
+                        <rect key="frame" x="12" y="5" width="112.5" height="112.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="R07-ZP-ygP" secondAttribute="height" id="ZNc-bi-yO3"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="支付宝" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O74-lS-I37">
+                        <rect key="frame" x="139.5" y="5" width="52" height="112.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_right2" translatesAutoresizingMaskIntoConstraints="NO" id="Qud-KG-pOc">
+                        <rect key="frame" x="582.5" y="31" width="33.5" height="61.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Qud-KG-pOc" secondAttribute="height" multiplier="16/29" id="Gua-7T-39K"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Qud-KG-pOc" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="24f-xH-MCj"/>
+                    <constraint firstItem="R07-ZP-ygP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="Daj-GG-yrZ"/>
+                    <constraint firstItem="R07-ZP-ygP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="Gtt-Ym-4b8"/>
+                    <constraint firstItem="O74-lS-I37" firstAttribute="leading" secondItem="R07-ZP-ygP" secondAttribute="trailing" constant="15" id="HZF-Ey-aaA"/>
+                    <constraint firstAttribute="bottom" secondItem="R07-ZP-ygP" secondAttribute="bottom" constant="5" id="Jym-3N-FWz"/>
+                    <constraint firstAttribute="trailing" secondItem="Qud-KG-pOc" secondAttribute="trailing" constant="12" id="QJx-VX-zrL"/>
+                    <constraint firstItem="O74-lS-I37" firstAttribute="top" secondItem="R07-ZP-ygP" secondAttribute="top" id="suR-0M-DL4"/>
+                    <constraint firstItem="O74-lS-I37" firstAttribute="bottom" secondItem="R07-ZP-ygP" secondAttribute="bottom" id="uDh-e9-zLR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="Qud-KG-pOc" firstAttribute="height" secondItem="KGk-i7-Jjw" secondAttribute="height" multiplier="1/2" id="NHh-Va-Rtb"/>
+            </constraints>
+            <connections>
+                <outlet property="leftImageView" destination="R07-ZP-ygP" id="OCv-YL-9YD"/>
+                <outlet property="midTitleLabel" destination="O74-lS-I37" id="YU3-ju-mFX"/>
+                <outlet property="rightImageView" destination="Qud-KG-pOc" id="GBK-Eq-hLq"/>
+            </connections>
+            <point key="canvasLocation" x="15" y="87.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow_right2" width="8" height="14"/>
+    </resources>
+</document>
