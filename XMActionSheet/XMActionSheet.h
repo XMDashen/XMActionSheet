@@ -44,7 +44,10 @@ typedef enum : NSUInteger {
 /*初始化自定义风格*/
 -(instancetype)initWithTitles:(NSArray *)titlesArray LeftImagesNameArray:(NSArray<NSString *> *)imagesArray sheetDescription:(NSString *)sheetDesc WithActionBlock:(actionBlock)action;
 
+/*弹出窗口*/
 -(void)showSheetOnWindow;
+
+/*隐藏窗口*/
 -(void)hideSheet;
 
 @end
